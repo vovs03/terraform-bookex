@@ -1,6 +1,6 @@
-- name: Update the apt-get cahe
+- name: Update the apt-get cache
   apt:
-    update_cahe: yes
+    update_cache: yes
 
 - name: Install PHP
   apt:
@@ -14,4 +14,4 @@
 #  git: repo= https://github.com/RadugaCamp/diventello-vue.git
 
 - name: Start Apache
-  service: name=apache2 state=started anbled=yes 
+  service: name=apache2 state=started enabled=yes 
