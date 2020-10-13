@@ -3,6 +3,7 @@
 - AMI `Ubuntu / Debian family Os`
 - :cool: use `busybox`
 - :key: port `8080`
+- `area` = 'FRANKFURT'
   
 > Ingress = Вход
 
