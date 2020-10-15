@@ -34,13 +34,11 @@ resource "aws_launch_configuration" "launch_conf" {
     create_before_destroy = true
   }
 
-  tags = {
-    #Name = "Terraform-"
-  }
 }
 
 resource "aws_autoscaling_group" "example" {
-  launch_configuration = aws_launch_configuration.example.name
+  launch_configuration = aws_launch_configuration.launch_conf.name
+  vpc_zone_identifier  = data.aws_subnet_ids.default.ids
 
   min_size = 2
   max_size = 10
@@ -61,4 +59,12 @@ resource "aws_security_group" "instance"{
       protocol    = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
   }
+}
+
+data "aws_vpc" "default" {
+  default = true
+}
+
+data "aws_subnet_ids" "default" {
+  vpc_id = data.aws_vpc.default.id
 }
