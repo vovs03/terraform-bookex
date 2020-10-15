@@ -24,3 +24,16 @@ data "aws_subnet_ids" "default" {
 - `vpc_zone_identifier  = data.aws_subnet_ids.default.ids`
 
 ---
+
+## 2.04.2 Подключение балансировщика нагрузки
+
+- [ ]1 Creating ALB
+  - Проверять в `консоли AWS` в разделе `LOAD BALANCING > Load Balancers`
+  - Ссылка на раздел: [https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:)
+- [ ]2
+- [ ]3
+- [ ]4
+- [ ]5
+- [ ]6
+- [ ]7
+- [ ]8
