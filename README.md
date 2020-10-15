@@ -17,3 +17,8 @@ Learning DevOps tool Terraform
 ## Day Zero
 
 - [ ] Глава 1.
+
+## Important
+
+- [x] :green_heart: `(use "git restore --staged <file>..." to unstage)`
+- Для отмены индексирования файла(не включать в коммит данный файл)
