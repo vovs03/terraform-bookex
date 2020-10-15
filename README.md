@@ -18,6 +18,26 @@ Learning DevOps tool Terraform
 
 - [ ] Глава 1.
 
+## Day 3
+
+- Полный фэйл(был поход к нотариусу + головные боли) потом и ночью не мог заснуть
+  - пробовал на Убунте работать без GUI
+
+## Day 4
+
+- [x] 1/4 2й главы. по страницам много, по факту - :green_heart: развёрнутый вэб-сервер vovs03#5 
+
+```terminal
+$ curl http://3.127.85.126:8080
+Simple server runned by Vladimir Pavlychev at AWS ::EU from Protvino(Moscow,Russia)
+```
+
+### TODO
+
+- конфигурируемый вэб-сервер #6
+- развёрнутый кластер вэб-серверов #7
+- развёрнутый балансировщик нагрузки #8
+
 ## Important
 
 - [x] :green_heart: `(use "git restore --staged <file>..." to unstage)`
