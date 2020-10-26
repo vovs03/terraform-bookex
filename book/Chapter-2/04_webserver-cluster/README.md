@@ -27,10 +27,10 @@ data "aws_subnet_ids" "default" {
 
 ## 2.04.2 Подключение балансировщика нагрузки
 
-- [ ]1 Creating ALB
+- [x]1 Creating ALB
   - Проверять в `консоли AWS` в разделе `LOAD BALANCING > Load Balancers`
   - Ссылка на раздел: [https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:)
-- [ ]2
+- [x] 2 `Add:` :new: `aws_lb_listener - default 404 page`
 - [ ]3
 - [ ]4
 - [ ]5
