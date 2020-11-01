@@ -37,3 +37,8 @@ Simple server runned by Vladimir Pavlychev at AWS ::EU from Protvino(Moscow,Russ
 - конфигурируемый вэб-сервер #6
 - развёрнутый кластер вэб-серверов #7
 - развёрнутый балансировщик нагрузки #8
+
+## Important
+
+- [x] :green_heart: `(use "git restore --staged <file>..." to unstage)`
+- Для отмены индексирования файла(не включать в коммит данный файл)
