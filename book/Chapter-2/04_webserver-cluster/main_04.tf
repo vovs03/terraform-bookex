@@ -75,6 +75,7 @@ resource "aws_lb" "example" {
   subnets = data.aws_subnet_ids.default.ids
 }
 
+# 04.2 определение прослушивателя
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.example.arn
   port              = 80
@@ -90,4 +91,4 @@ resource "aws_lb_listener" "http" {
       status_code  = 404
     }
   }
-}
+} # /4.02
