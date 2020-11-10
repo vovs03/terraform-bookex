@@ -95,6 +95,26 @@ resource "aws_lb_listener" "http" {
   }
 } # /4.02
 
+# 4.05 new group ASG
+resource "aws_lb_target_group" "asg" {
+
+  name = var.alb_name
+
+  port     = var.server_port
+  protocol = "HTTP"
+  vpc_id   = data.aws_vpc.default.id
+
+  health_check {
+    path                = "/"
+    protocol            = "HTTP"
+    matcher             = "200"
+    interval            = 15
+    timeout             = 3
+    healthy_threshold   = 2
+    unhealthy_threshold = 2
+  }
+} # /4.05
+
 # 4.03 новая группа безопасности специально для балансировщика нагрузки
 resource "aws_security_group" "alb" {
 

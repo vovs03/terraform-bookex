@@ -32,8 +32,10 @@ data "aws_subnet_ids" "default" {
   - Ссылка на раздел: [https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:)
 - [x] 2 `Add:` :new: `aws_lb_listener - default 404 page` - check
 - [x] 3️⃣ aws_security_group - new group policy
+  - [x] 3.1 create `alb_security_group_name` in variables
 - [x] 4️⃣ set argument in aws_lb for use aws_security_group
-- [ ]5
+- [x] 5️⃣ create resourse `aws_lb_target_group`
+  - [x] 5.1 variable `alb_name` for target group
 - [ ]6
 - [ ]7
 - [ ]8
