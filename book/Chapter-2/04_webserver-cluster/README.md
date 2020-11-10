@@ -37,5 +37,5 @@ data "aws_subnet_ids" "default" {
 - [x] 5️⃣ create resourse `aws_lb_target_group`
   - [x] 5.1 variable `alb_name` for target group
 - [x] 6️⃣ change the 🔗 to new target_grop_arns (integration ASG & ALB)
-- [ ] 7️⃣ create aws_lb_listener_rule
-- [ ]8
+- [x] 7️⃣ create aws_lb_listener_rule
+- [x] 8️⃣ change old output - 'public_ip' -> aws_lb.example.dns_name
