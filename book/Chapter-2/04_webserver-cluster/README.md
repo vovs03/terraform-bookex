@@ -31,7 +31,7 @@ data "aws_subnet_ids" "default" {
   - Проверять в `консоли AWS` в разделе `LOAD BALANCING > Load Balancers`
   - Ссылка на раздел: [https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:)
 - [x] 2 `Add:` :new: `aws_lb_listener - default 404 page` - check
-- [ ]3
+- [x] 3️⃣ aws_security_group - new group policy
 - [ ]4
 - [ ]5
 - [ ]6

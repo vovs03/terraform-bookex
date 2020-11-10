@@ -92,3 +92,25 @@ resource "aws_lb_listener" "http" {
     }
   }
 } # /4.02
+
+# 4.03 новая группа безопасности специально для балансировщика нагрузки
+resource "aws_security_group" "alb" {
+
+  name = var.alb_security_group_name
+
+  # Allow inbound HTTP requests
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  # Allow all outbound requests
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+} # /4.03
