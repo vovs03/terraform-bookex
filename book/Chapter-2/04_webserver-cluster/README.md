@@ -36,6 +36,6 @@ data "aws_subnet_ids" "default" {
 - [x] 4️⃣ set argument in aws_lb for use aws_security_group
 - [x] 5️⃣ create resourse `aws_lb_target_group`
   - [x] 5.1 variable `alb_name` for target group
-- [ ]6
+- [x] 6️⃣ change the 🔗 to new target_grop_arns (integration ASG & ALB)
 - [ ]7
 - [ ]8

@@ -40,6 +40,11 @@ resource "aws_autoscaling_group" "example" {
   launch_configuration = aws_launch_configuration.launch_conf.name
   vpc_zone_identifier  = data.aws_subnet_ids.default.ids
 
+  # 6. (integration ASG & ALB)
+  target_group_arns = [aws_lb_target_group.asg.arn]
+  health_check_type = "ELB"
+  # /6.
+
   min_size = 2
   max_size = 10
 
