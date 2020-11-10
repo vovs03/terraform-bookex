@@ -30,10 +30,12 @@ data "aws_subnet_ids" "default" {
 - [x]1 Creating ALB
   - Проверять в `консоли AWS` в разделе `LOAD BALANCING > Load Balancers`
   - Ссылка на раздел: [https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LoadBalancers:)
-- [x] 2 `Add:` :new: `aws_lb_listener - default 404 page`
-- [ ]3
-- [ ]4
-- [ ]5
-- [ ]6
-- [ ]7
-- [ ]8
+- [x] 2 `Add:` :new: `aws_lb_listener - default 404 page` - check
+- [x] 3️⃣ aws_security_group - new group policy
+  - [x] 3.1 create `alb_security_group_name` in variables
+- [x] 4️⃣ set argument in aws_lb for use aws_security_group
+- [x] 5️⃣ create resourse `aws_lb_target_group`
+  - [x] 5.1 variable `alb_name` for target group
+- [x] 6️⃣ change the 🔗 to new target_grop_arns (integration ASG & ALB)
+- [x] 7️⃣ create aws_lb_listener_rule
+- [x] 8️⃣ change old output - 'public_ip' -> aws_lb.example.dns_name
