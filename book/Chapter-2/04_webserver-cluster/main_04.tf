@@ -100,6 +100,23 @@ resource "aws_lb_listener" "http" {
   }
 } # /4.02
 
+# 4.07 aws_lb_listener_rule
+resource "aws_lb_listener_rule" "asg" {
+  listener_arn = aws_lb_listener.http.arn
+  priority     = 100
+
+  condition {
+    path_pattern {
+      values = ["*"]
+    }
+  }
+
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.asg.arn
+  }
+} # /4.07
+
 # 4.05 new group ASG
 resource "aws_lb_target_group" "asg" {
 
